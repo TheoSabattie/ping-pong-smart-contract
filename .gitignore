@@ -30,6 +30,9 @@ tags
 **/testnet/**
 **/erdpy.data-storage.json
 **/*.interaction.json
+*.pem
+out.json
+*/wasm/src/lib.rs
 
 # Python scripts
 **/__pycache__/**
