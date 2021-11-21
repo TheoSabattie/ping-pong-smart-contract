@@ -131,6 +131,11 @@ pub trait PingPong {
         }
     }
 
+    #[view(getAmount)]
+    fn get_amount(&self) -> BigUint {
+        return self.blockchain().get_sc_balance(&self.accepted_payment_token_id().get(), 0);
+    }
+
     // storage
 
     #[view(getAcceptedPaymentToken)]
